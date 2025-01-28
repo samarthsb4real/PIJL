@@ -13,4 +13,9 @@ class Student {
     public int getPRN() {
         return prn;
     }
+
+    public void display() {
+        System.out.println("Name: " + name);
+        System.out.println("PRN: " + prn);
+    }
 }

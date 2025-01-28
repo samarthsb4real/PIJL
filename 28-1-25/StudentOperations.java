@@ -12,4 +12,9 @@ class StudentOperations {
         System.out.println("Student added successfully!");
     }
 
+    public void displayStudents() {
+        for (Student student : students) {
+            student.display();
+        }
+    }
 }
