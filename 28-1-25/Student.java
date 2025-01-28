@@ -45,6 +45,6 @@ class Student {
     }
 
     public void display() {
-        System.out.println("Name: " + getName() + " PRN:" + getPRN());
+        System.out.println("Name: " + getName() + " PRN:" + getPRN() + " CGPA:" + getCgpa() + " Branch:" + getBranch());
     }
 }
