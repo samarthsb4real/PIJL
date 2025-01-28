@@ -6,10 +6,14 @@ public class Main {
         System.out.println("Enter Name: ");
         String name = sc.nextLine();
         System.out.println("Enter PRN: ");
-        int prn = sc.nextInt();
-        
+        long prn = sc.nextLong();
+        System.out.println("Enter CGPA: ");
+        double cgpa = sc.nextDouble();
+        System.out.println("Enter Branch: ");
+        String branch = sc.next();
+
         StudentOperations operations = new StudentOperations();
-        Student student = new Student(name, prn);
+        Student student = new Student(name, prn, cgpa, branch);
         operations.addStudents(student);
         operations.displayStudents();
 
