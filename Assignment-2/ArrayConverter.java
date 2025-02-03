@@ -9,4 +9,13 @@ public class ArrayConverter {
         }
         return list;
     }
+
+    // Convert ArrayList back to array
+    public int[] arrayListToArray(ArrayList<Integer> list) {
+        int[] array = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+        return array;
+    }
 }
