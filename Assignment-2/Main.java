@@ -21,5 +21,12 @@ public class Main {
         // Even and Odd Separator
         EvenOddSeparator separator = new EvenOddSeparator();
         separator.separate(numbers);
+
+        // Finding Smallest Distance
+        SmallestDistanceFinder distanceFinder = new SmallestDistanceFinder();
+        int index = distanceFinder.findSmallestDistance(numbers);
+        System.out.println("Smallest distance is between indices: " + index + " and " + (index + 1));
+
+        scanner.close();
     }
 }
