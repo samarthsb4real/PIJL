@@ -18,6 +18,8 @@ public class Main {
             numbers[i] = scanner.nextInt();
         }
 
-        scanner.close();
+        // Even and Odd Separator
+        EvenOddSeparator separator = new EvenOddSeparator();
+        separator.separate(numbers);
     }
 }
