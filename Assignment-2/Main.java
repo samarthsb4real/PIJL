@@ -25,7 +25,11 @@ public class Main {
         // Finding Smallest Distance
         SmallestDistanceFinder distanceFinder = new SmallestDistanceFinder();
         int index = distanceFinder.findSmallestDistance(numbers);
-        System.out.println("Smallest distance is between indices: " + index + " and " + (index + 1));
+        if (index != -1) {
+            System.out.println("Smallest distance is between indices: " + index + " (" + numbers[index] + ") and " + (index + 1) + " (" + numbers[index + 1] + ")");
+        } else {
+            System.out.println("Not enough elements to find a distance.");
+        }
 
         // Array to ArrayList and Vice Versa
         ArrayConverter converter = new ArrayConverter();
