@@ -5,5 +5,13 @@ public class EvenOddSeparator {
     public void separate(int[] numbers) {
         List<Integer> even = new ArrayList<>();
         List<Integer> odd = new ArrayList<>();
+
+        for (int num : numbers) {
+            if (num % 2 == 0) {
+                even.add(num);
+            } else {
+                odd.add(num);
+            }
+        }
     }
 }
