@@ -13,5 +13,8 @@ public class EvenOddSeparator {
                 odd.add(num);
             }
         }
+
+        System.out.println("Even numbers: " + even);
+        System.out.println("Odd numbers: " + odd);
     }
 }
