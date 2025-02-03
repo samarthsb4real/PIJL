@@ -6,6 +6,14 @@ public class SmallestDistanceFinder {
         int minDistance = Math.abs(numbers[1] - numbers[0]);
         int index = 0;
 
+        for (int i = 1; i < numbers.length - 1; i++) {
+            int distance = Math.abs(numbers[i + 1] - numbers[i]);
+            if (distance < minDistance) {
+                minDistance = distance;
+                index = i;
+            }
+        }
+        
         return index;
     }
 }
