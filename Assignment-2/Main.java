@@ -27,6 +27,13 @@ public class Main {
         int index = distanceFinder.findSmallestDistance(numbers);
         System.out.println("Smallest distance is between indices: " + index + " and " + (index + 1));
 
+        // Array to ArrayList and Vice Versa
+        ArrayConverter converter = new ArrayConverter();
+        ArrayList<Integer> arrayList = converter.arrayToArrayList(numbers);
+        System.out.println("Array converted to ArrayList: " + arrayList);
+        int[] convertedArray = converter.arrayListToArray(arrayList);
+        System.out.println("ArrayList converted back to Array: " + Arrays.toString(convertedArray));
+
         scanner.close();
     }
 }
