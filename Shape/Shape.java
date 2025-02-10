@@ -1,5 +1,3 @@
-//Shape.java
-
 abstract class Shape {
     protected double dim_one, dim_two, dim_three;
     int num_sides;
@@ -19,10 +17,10 @@ abstract class Shape {
     }
 
     abstract double area(); // Abstract method to calculate area
+
     abstract double perimeter(); // Abstract method to calculate perimeter
-    // Abstract method to calculate area
+    
     public int getNumSides() {
         return num_sides;
     }
-
 }
