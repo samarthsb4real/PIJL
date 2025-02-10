@@ -25,4 +25,6 @@ abstract class Shape {
         return num_sides;
     }
 
+    // Abstract method to calculate perimeter
+
 }
