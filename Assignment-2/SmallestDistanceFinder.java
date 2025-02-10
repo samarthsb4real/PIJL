@@ -12,8 +12,7 @@ public class SmallestDistanceFinder {
                 minDistance = distance;
                 index = i;
             }
-        }
-        
+        }        
         return index;
     }
 }
