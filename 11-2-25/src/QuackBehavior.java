@@ -1,7 +1,4 @@
-// QuackBehavior.java
 
-public interface QuackBehavior
-{
-    public void quack();
+public interface QuackBehavior {
+    void quack();
 }
-
